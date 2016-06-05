@@ -1,0 +1,271 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title Just Quiz
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        h1 Welcome to 
+        h1 Just Quiz
+
+      section#soal1(onmouseenter="sLoad(0)")
+        div.board
+          div.nomor 1.
+          h2 How many holes <br>in a Polo?
+          div.botAns
+            div.ans.A(onclick="ansClick(1)") ONE
+            div.ans.B(onclick="ansClick(2)") TWO
+            div.ans.C(onclick="ansClick(3)") THREE
+            div.ans.D(onclick="ansClick(4)") FOUR
+          div.correct
+          div.wrong 
+      section#soal2(onmouseenter="sLoad(1)")
+        div.board
+          div.nomor 2.
+          h2(style="color: red") REMEMBER:
+          h4 blue, yellow, blue, red, green
+          br
+          div.botAns
+            div.ans.A(onclick="ansClick(1)") O.K.
+            div.ans.B(onclick="ansClick(2)") WHAT
+            div.ans.C(onclick="ansClick(3)") I CAN'T!
+            div.ans.D(onclick="ansClick(4)") GTFO
+          div.correct 
+          div.wrong         
+      section#soal3(onmouseenter="sLoad(2)")
+        div.board
+          div.nomor(style="cursor: pointer" onclick="ansClick(0)") 3.
+          h2 Click the <br>
+          h2 smallest
+          div.rectangle
+            div.squareXL(style="cursor: pointer" onclick="ansClick(1)")
+            div.squareM(style="cursor: pointer" onclick="ansClick(2)")
+            div.squareS(style="cursor: pointer" onclick="ansClick(3)")
+            div.squareL(style="cursor: pointer" onclick="ansClick(4)")
+          div.correct
+          div.wrong 
+      section#soal4(onmouseenter="sLoad(3)")
+        div.board
+          div.nomor 4.
+          h2 Who is the children of Zeus?
+          br
+          br
+          div.botAns
+            div.long.ans.A(onclick="ansClick(1)") ATHENA & HEFAISTOS
+            div.long.ans.B(onclick="ansClick(2)") ARTEMIS & ARES
+            div.long.ans.C(onclick="ansClick(3)") APPOLO & ARTEMIS
+            div.long.ans.D(onclick="ansClick(4)") ARTEMIS & ATHENA
+          div.correct
+          div.wrong 
+      section#soal5(onmouseenter="sLoad(4)")
+        div.board
+          div.nomor(style="cursor: pointer" onclick="ansClick(0)") 5
+          h2 (sqrt(41 - 5) + 4) / 2 
+          br
+          br
+          div.botAns
+            div.ans.A(onclick="ansClick(1)") V
+            div.ruby.ans.B(onclick="ansClick(2)") <ruby>五<rt>ご(go)</rt></ruby>
+            div.ruby.ans.C(onclick="ansClick(3)") <ruby>五<rt>Wǔ</rt></ruby>
+            div.ans.D(onclick="ansClick(4)") 101
+          div.correct
+          div.wrong 
+      section#soal6(onmouseenter="sLoad(5)")
+        div.board
+          div.nomor 6.
+          h2 return !statement
+          br
+          br
+          div.botAns
+            div.lans.A(onclick="ansClick(1)") Bloodthorn berharga 7195 Gold
+            div.lans.B(onclick="ansClick(2)") Omnislash(DotA) terinpirasi dari Omnislash(FFVII)
+            div.lans.C(onclick="ansClick(3)") Hurricane Pike = Dragon Lance + Recipe + Staff of Wizardry
+            div.lans.D(onclick="ansClick(4)") Second Respawn Time Roshan sekitar 15 mins
+          div.correct
+          div.wrong 
+      section#soal7(onmouseenter="sLoad(6)")
+        div.board
+          div.nomor 7.
+          h2 Click the <br>
+          h2(style="font-size: 48px; cursor: pointer" onclick="ansClick(0)") LARGEST
+          div.rectangle
+            div.squareXL(style="cursor: pointer" onclick="ansClick(1)")
+            div.squareM(style="cursor: pointer" onclick="ansClick(2)")
+            div.squareS(style="cursor: pointer" onclick="ansClick(3)")
+            div.squareL(style="cursor: pointer" onclick="ansClick(4)")
+          div.correct
+          div.wrong 
+      section#soal8(onmouseenter="sLoad(7)")
+        div.board
+          div.nomor 8.
+          h2 WHAT IS THIS?
+          div.Vrectangle
+            div.ans(onclick="ansClick(1)") Teabag
+            div.ans(onclick="ansClick(2)") 
+            div.ans(onclick="ansClick(3)") Mr. T's Oven Glove
+            div.ans(onclick="ansClick(4)") Question 8
+          div.Vimage
+            div.teabag
+          div.correct
+          div.wrong 
+      section#soal9(onmouseenter="sLoad(8)")
+        div.board
+          div.nomor 9.
+          h2 Pretty sure you remember this one.
+          div.botAns
+            div.button.red(onclick="ansClick(1)") 
+            div.button.orange(onclick="ansClick(2)") 
+            div.button.yellow(onclick="ansClick(3)") 
+            div.button.green(onclick="ansClick(4)") 
+            div.button.blue(onclick="ansClick(5)") 
+            div.button.purple(onclick="ansClick(6)") 
+          div.correct
+          div.wrong 
+      section#soal10(onmouseenter="sLoad(9)")
+        div.board
+          div.nomor 10.
+          div.fast
+            h2 Charge My Laptop 
+            div.loadingbar(style="cursor: pointer" onclick="ansClick(0)") 
+              div.bar
+                div.block.first 
+                div.block 
+                div.block 
+                div.block 
+                div.block 
+                div.block 
+                div.block 
+                div.block 
+                div.block 
+                div.block.last 
+            br
+            br
+            br
+            h2#show 
+          div.correct
+          div.wrong 
+      section
+        h2 References
+        h3
+          ul
+            li
+            li Impossible Quiz
+            li www.theimpossiblequiz.net
+            li Dota 2 - Gamepedia
+            li dota2.gamepedia.com/Dota_2_Wiki
+            li Wikipedia
+            li www.wikipedia.org
+
+    script(src='build/build.js')
+    script.
+      var correct = 0
+      var wrong = 0
+      var g = 0
+      var code = ""
+      var clicked = -1
+      function sLoad(Num) {
+        g = Num;
+        document.getElementsByClassName('correct')[g].innerHTML = correct
+        document.getElementsByClassName('wrong')[g].innerHTML = wrong
+      }
+      var answers = ["O.K.", "Four", "0", "D", "5", "C", "0", "8", "42413", ""]
+      var answered = [false, false, false, false, false, false, false, false, false, false]
+      var ans = false
+      function ansClick(Num) {
+        ans = false
+        if (!answered[0] && g == 0) {
+          answered[0] = true
+          if (Num == 4) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[1] && g == 1) {
+          answered[1] = true
+          if (Num == 1) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[2] && g == 2) {
+          answered[2] = true
+          if (Num == 0) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[3] && g == 3) {
+          answered[3] = true
+          if (Num == 4) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[4] && g == 4) {
+          answered[4] = true
+          if (Num == 0) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[5] && g == 5) {
+          answered[5] = true
+          if (Num == 3) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[6] && g == 6) {
+          answered[6] = true
+          if (Num == 0) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[7] && g == 7) {
+          answered[7] = true
+          if (Num == 1) { ans = true }
+          else { ans = false }
+          if(ans) { correct++ }
+          else { wrong++ }
+        }
+        else if (!answered[8] && g == 8) {
+          if (code.length < 4) {
+            code += Num + ""
+          }
+          else {
+            answered[8] = true
+            code += Num + ""
+            if (code == "53514") { ans = true }
+            if(ans) { correct++ }
+            else { wrong++ }
+          }
+        }
+        else if (!answered[9] && g == 9) {
+          if(clicked < 8){
+            clicked++;
+            document.getElementsByClassName('block')[clicked].style.backgroundColor = "royalblue";
+          }
+          else{
+            clicked++;
+            document.getElementsByClassName('block')[clicked].style.backgroundColor = "royalblue";
+            ans = true
+            if(ans) { correct++ }
+            Show()
+          }
+        }
+        document.getElementsByClassName('correct')[g].innerHTML = correct
+        document.getElementsByClassName('wrong')[g].innerHTML = wrong
+      }
+      function Show() {
+        document.getElementById("show").innerHTML = "Thanks for playing!"
+      }
+      document.getElementsByClassName('correct')[g].innerHTML = correct
+      document.getElementsByClassName('wrong')[g].innerHTML = wrong
